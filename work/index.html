@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/ceiling-logo2.png" alt="">
+        <div>
+            <p><a href="">搜索</a></p>
+        </div>
+    </header>
+    <p id="cart" onclick="goCart()">我的购物车(<span id="spa">0</span>)</p>
+    <section id="sec">
+        <div id="shopping">
+
+        </div>
+    </section>
+    <table id="settlement">
+        <tr>
+            <th>全选<input type="checkbox" name="" id="allSelect " onchange="selectAll(this)" ></th>
+            <th>菜品</th>
+            <th>价格/每份</th>
+            <th>数量</th>
+            <th>操作</th>
+        </tr>
+    </table>
+
+    <div id="gong">
+        <ul>
+            <li>
+                <button onclick="reduceR()">删除选择项</button>
+                <span onclick="con()">继续点餐</span>
+            </li>
+            <li>
+                <span>合计<b id="total">0</b>元</span>
+                <button onclick="balance()">结算</button>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
