@@ -1,0 +1,44 @@
+#allcart{
+	width: 1200px;margin: auto;
+	color: #FF0000;font-size: 20px;
+	font-weight: 600;
+}
+#car{
+    width: 1200px;
+    margin: auto;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 20px;margin-bottom: 20px;
+}
+#car tr{
+
+    display: grid;grid-template-columns: repeat(7,170px);
+}
+#car tr td{
+	margin: auto;
+}
+#car img{
+	width: 100px;height: 120px;
+}
+
+#msg{
+	width: 1200px;margin: auto;
+}
+#gong ul{
+    width: 1200px;display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+#gong button{
+	border: none;
+	background-color: orange;
+	padding: 3px 5px;
+	border-radius: 5px;
+}
+#money{
+	width: 100px;padding: 20px;margin: auto;margin-top: 20px;margin-bottom: 20px;
+	background-color: aqua;color: #fff;font-size: 18px;font-weight: 700;
+	text-align: center;
+	border-radius: 10px;
+}

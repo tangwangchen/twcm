@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入购物车</title>
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/first.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+	<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body onload="initdet()">
+    <header>
+        <ul>
+            <a href="first.html"><i class="fa fa-home fa-lg"></i> 京东首页</a>
+            <a href=""><i class="fa fa-map-marker fa-lg"></i> 浙江</a>
+        </ul>
+        <ul>
+			<a href="logn.html" id="slogn"></a>
+            <a href="">我的订单</a>
+            <a href="" onclick="gocart(this)"><i class="fa fa-shopping-cart fa-lg"></i>我的购物车</a>
+            <a href="">客户服务</a>
+            <a href=""></a>
+        </ul>
+    </header>
+    <nav>
+        <img src="images/logo.png">
+        <ul>
+            <input type="text" style="width: 300px;height: 24px;" />
+            <input type="button" name="" id="" value="搜索" style="width: 50px;height: 28px;" />
+        </ul>
+    </nav>
+    <div class="imp">
+        <ul>
+            <img src="" alt="" id="bigimg">
+        </ul>
+        <ul class="imp_right">
+            <h3 id="big"></h3>
+            <li class="r_1">
+                <div style="float: right;border-left: solid 1px #ccc;padding: 5px;">
+                        <p>累计评价</p>
+                        <a href="">45万+</a>
+                    </div>
+                <ul class="r">
+                    <span>京&nbsp;东&nbsp; 价</span>
+                    <span style="color: red;font-size: 18px;" id="goprice"></span>
+                    <span>[9.5折]</span>
+                    <span style="color: #ccc;font-size: 13px;" >[定价] ￥<del id="bigprice"></del></span>
+                    <span style="color: royalblue;font-size: 14px;">(降价通知)</span>
+                </ul>
+                <ul class="r">
+                    
+                    <span>促销信息</span>
+                    <li id="r_l">
+                        <span style="color: red;border: red 1px solid;padding:1px 3px;margin: 0;">减满</span>
+                        <span>每满100元，可减50元现金详情>></span><br>
+                        <span  style="color: red;border: red 1px solid;padding:1px 3px;margin: 0;">加价购</span>
+                        <span>满10元另加26.90元，或满12元另加16.90元，或满15元另加9.90元，
+                            即可在购物车换购热销商品详情 >>
+                        </span><br>
+                        <span><i class="fa fa-lightbulb-o fa-lg" style="color:#F6DEA3;"></i>以上促销可在购物车任选其一
+                        </span>
+                        
+                    </li>
+                    
+                </ul>
+            </li>
+            <li class="r">
+                <span>增值业务</span>
+                <a href=""style="color: red;"><i class="fa fa-refresh fa-lg"></i>高价回收，极速到账</a>
+                <a href=""style="color: red;"><i class="fa fa-gift fa-lg"></i>礼品包装</a>
+            </li>
+            <li class="r">
+                <span>排&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;名</span>
+                <span>自营<a href="">童书销量榜</a>第8位</span>
+            </li>
+            <li class="r">
+                <span> 配&nbsp;&nbsp;送&nbsp;至 </span>
+                <select name="" id="">
+                    <option value="">浙江杭州市萧山区戴村镇</option>
+                </select>有货
+                <p style="margin-left: 90px;font-size: 14px;">由<a href=""style="color: red;">京东</a>发贷,并提供售后服务.23:00前下单。预计<b>明天(01月06日)</b>送达</p>
+            </li>
+            <li class="r">
+                <span>重&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;量</span>
+                <span>0.1kg</span>
+            </li>
+            <li class="r">
+                <span>服务支持</span>
+                <span >
+                    <i class="fa fa-diamond fa-lg"style="color: red;">放心购</i>
+                    <a href="">闪电退款</a>|
+                    <a href="">上门换新</a>|
+                    <a href="">破损包退换</a>
+                </span>
+                <br>
+                <p style="margin-left: 90px;color: #ccc;">211限时达 自提 49元免基础运费</p>
+            </li>
+            <li class="r_2">
+                <div id="sjs">
+                    <input type="text" value="1">
+                    <input type="button" value="+">
+                    <input type="button" value="-">
+                </div>
+                <input type="button" value="加入购物车"id="go_car" onclick="buy()">
+            </li>
+            <p class="r">
+                <span>温馨提示</span>  
+                1. 支持7天无理由退货
+            </p>
+        </ul>
+    </div>
+</body>
+
+</html>

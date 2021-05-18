@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/first.css"/>
+		<!-- <script src="./js/first.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	</head>
+	<body onload="hicart()">
+		<header>
+			<ul>
+				<a href="first.html"><i class="fa fa-home fa-lg"></i> 京东首页</a>
+				<a href=""><i class="fa fa-map-marker fa-lg"></i> 浙江</a>
+			</ul>
+			<ul>
+				<a href="logn.html" id="slogn"></a>
+				<a href="">我的订单</a>
+				<a href="">客户服务</a>
+		
+			</ul>
+		</header>
+		<nav>
+			<img src="images/logo.png">
+			<ul>
+				<input type="text" style="width: 300px;height: 24px;" />
+				<input type="button" name="" id="" value="搜索" style="width: 50px;height: 28px;" />
+			</ul>
+		</nav>
+		<p id="allcart">全部商品<span id="spa">0</span></p>
+		<table id="car">
+		        <tr class='car_head'>
+		            <th>全选<input type="checkbox" name="" id="allSelect " onchange="selectAll(this)" ></th>
+		            <th>商品</th>
+					<th>介绍</th>
+		            <th>单价</th>
+		            <th>数量</th>
+					<th>小计</th>
+		            <th>操作</th>
+		        </tr>
+		    </table>     
+			   <p id="msg"></p>
+		    <div id="gong">
+		            <ul>
+		                <li>
+		                    <button onclick="reduceR()">删除选中商品</button>
+		                    <a href="first.html">返回首页</a>
+		                </li>
+		                <li>
+		                    <span>合计<span id="total">
+		                    	0
+		                    </span>元</span>
+		                    <button onclick="balance()">结算</button>
+		                </li>
+		            </ul>
+		        </div>
+				<p id="money">支付</p>
+			<footer>
+				<li>品类齐全，轻松购物</li>
+				<li>品类齐全，轻松购物</li>
+				<li>品类齐全，轻松购物</li>
+				<li>品类齐全，轻松购物</li>
+			
+			</footer>
+	</body>
+</html>
